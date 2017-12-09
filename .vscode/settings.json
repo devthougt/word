@@ -1,0 +1,12 @@
+ {
+     "editor.wordWrap": "off",
+     "files.exclude": {
+         "**/trash": {},
+
+         "typings": {},
+         "**/*.map": {},
+         "**/*.js": {
+             "when": "$(basename).ts"
+         }
+     }
+ }

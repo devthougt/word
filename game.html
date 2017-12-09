@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WordGame</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="card">
+
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-blue">
+        <a class="navbar-brand" href="#"><i class="material-icons orange600">dashboard</i> WordGame</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+        <div class="collapse navbar-collapse nav-pills justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown link
+        </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <p></p>
+    <p></p>
+    <div class="container">
+        <div class="game-card bg-img">
+            <div class="inner-nav">
+                <ul class="nav justify-content-center bg-dark">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="game-board" id="game_board">
+
+                <!--  <button id="start" onclick="start()">Start</button> -->
+                <!--    <button type="button" id="btn_1" class="btn btn-primary" onclick="executeEvent('btn_1')">A</button>
+                <button type="button" id="btn_2" class="btn btn-secondary" onclick="executeEvent('btn_2')">E</button>
+                <button type="button" id="btn_3" class="btn btn-success" onclick="executeEvent('btn_3')">S</button>
+                <button type="button" id="btn_4" class="btn btn-danger" onclick="executeEvent('btn_4')">O</button>
+                <button type="button" id="btn_5" class="btn btn-warning" onclick="executeEvent('btn_5')">W</button>
+                <button type="button" id="btn_6" class="btn btn-info" onclick="executeEvent('btn_6')">M</button>
+ -->
+            </div>
+
+            <form>
+                <div class="row input-text">
+                    <div class="col-2">
+                        <input type="text" id="text_box1" readonly class="form-control">
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="text_box2" readonly class="form-control">
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="text_box3" readonly class="form-control">
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="text_box4" readonly class="form-control">
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="text_box5" readonly class="form-control">
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="text_box6" readonly class="form-control">
+                    </div>
+
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+
+    <script src="function.js"></script>
+    <script src="data.js"></script>
+    <script src="word.js"></script>
+    <script src="indexedDb.js"></script>
+
+
+</body>
+
+</html>
